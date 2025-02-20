@@ -44,7 +44,6 @@ export const Footer_Data: FooterData = {
           link: 'https://guiguqimen.com'
         },
         { name: '灵启天玑', link: 'https://ai.diviner.fun' },
-        { name: '奈飞小铺', link: 'https://ihezu.love/UKTer6' },
         {
           name: '寻智启明',
           link: 'https://chat.diviner.fun'
