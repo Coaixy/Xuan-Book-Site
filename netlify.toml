@@ -1,0 +1,20 @@
+[build.environment]
+NODE_VERSION = "22"
+PLAYWRIGHT_SKIP_BROWSER_DOWNLOAD = "1"
+
+[build]
+publish = ".vitepress/dist"
+command = "pnpm build"
+
+[[headers]]
+for = "/assets/*"
+[headers.values]
+cache-control = '''
+    max-age=31536000,
+    immutable'''
+
+[[redirects]]
+from = "https://xx.theovan.cn/*"
+to = "https://xx.theojs.cn/:splat"
+status = 301
+force = true
